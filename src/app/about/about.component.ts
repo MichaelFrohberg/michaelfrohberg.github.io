@@ -14,15 +14,6 @@ console.log('`About` component loaded asynchronously');
   `],
   template: `
     <h1>About</h1>
-    <div>
-      For hot module reloading run
-      <pre>npm run start:hmr</pre>
-    </div>
-    <div>
-      <h3>
-        patrick@AngularClass.com
-      </h3>
-    </div>
   `
 })
 export class About {
