@@ -3,7 +3,7 @@ import { AppState } from '../app.service';
 
 @Component({
 
-  selector: 'home', 
+  selector: 'home',
   styles: [ require('./home.css') ],
   template: require('./home.html')
 })
