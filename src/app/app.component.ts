@@ -11,12 +11,7 @@ import { AppState } from './app.service';
  */
 @Component({
   selector: 'app',
-  pipes: [ ],
-  providers: [ ],
   encapsulation: ViewEncapsulation.None,
-  styles: [
-    require('./app.css')
-  ],
   template: `
     <span router-active>
       <button linkTo="/">
