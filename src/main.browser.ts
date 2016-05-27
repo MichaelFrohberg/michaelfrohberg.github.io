@@ -15,6 +15,7 @@ import { ENV_PROVIDERS } from './platform/environment';
 */
 import { App, APP_PROVIDERS, routes } from './app';
 import { provideRouter } from '@ngrx/router';
+import {MATERIAL_DIRECTIVES, MATERIAL_PROVIDERS} from 'ng2-material';
 
 
 /*
@@ -27,6 +28,8 @@ export function main(initialHmrState?: any): Promise<any> {
     ...PROVIDERS,
     ...ENV_PROVIDERS,
     ...DIRECTIVES,
+    ...MATERIAL_DIRECTIVES,
+    ...MATERIAL_PROVIDERS,
     ...PIPES,
     ...APP_PROVIDERS,
     provideRouter(routes)

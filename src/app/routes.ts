@@ -1,6 +1,6 @@
 import { Routes } from '@ngrx/router';
 import { Home } from './home';
-import { About } from './about'; 
+import { About } from './about';
 
 export const routes: Routes = [
     {

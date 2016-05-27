@@ -3,7 +3,7 @@
  */
 import { Component, ViewEncapsulation } from '@angular/core';
 import { AppState } from './app.service';
-
+import { Navbar, Footer } from './shared/index';
 
 /*
  * App Component
@@ -13,18 +13,11 @@ import { AppState } from './app.service';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   template: `
-    <span router-active>
-      <button linkTo="/">
-        Home
-      </button>
-    </span>
-    <span router-active>
-      <button linkTo="/about ">
-        About
-      </button>
-    </span>
+    <site-navbar></site-navbar>
     <route-view></route-view>
-  `
+    <site-footer></site-footer>
+  `,
+  styles: [require('./app.scss')]
 })
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';

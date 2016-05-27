@@ -165,6 +165,11 @@ module.exports = {
         test: /\.css$/,
         loader: 'raw-loader'
       },
+      
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      },
 
       /* Raw loader support for *.html
        * Returns file content as string
@@ -258,6 +263,9 @@ module.exports = {
     module: false,
     clearImmediate: false,
     setImmediate: false
+  },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, './node_modules/ng2-material')]
   }
 
 };

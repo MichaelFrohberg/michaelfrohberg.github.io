@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
     moduleId: module.id,
     selector: 'site-footer',
-    templateUrl: 'footer.html'
+    template: require('./footer.html')
 })
 export class Footer implements OnInit {
     constructor() { }
