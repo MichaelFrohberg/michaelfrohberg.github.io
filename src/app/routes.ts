@@ -1,6 +1,7 @@
-import { Routes } from '@ngrx/router';
+import { Routes } from '@ngrx/router/es6';
 import { Home } from './home';
-import { About } from './about';
+import { Blog } from './blog';
+import { Projects } from './projects';
 
 export const routes: Routes = [
     {
@@ -8,7 +9,11 @@ export const routes: Routes = [
         component: Home
     },
     {
-        path: '/about',
-        component: About
+        path: '/blog',
+        component: Blog
+    },
+    {
+        path: '/projects',
+        component: Projects
     }
-]
+];

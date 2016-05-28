@@ -119,6 +119,7 @@ module.exports = {
           // these packages have problems with their sourcemaps
           helpers.root('node_modules/rxjs'),
           helpers.root('node_modules/@angular'),
+          helpers.root('node_modules/@ngrx')
         ]
       }
 
@@ -265,7 +266,7 @@ module.exports = {
     setImmediate: false
   },
   sassLoader: {
-    includePaths: [path.resolve(__dirname, './node_modules/ng2-material')]
+    includePaths: [helpers.root("node_modules/ng2-material")]
   }
 
 };

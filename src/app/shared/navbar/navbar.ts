@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {MdToolbar} from '@angular2-material/toolbar';
-import {MdIcon} from 'ng2-material';
+import {MdIcon} from '@angular2-material/icon';
+import './navbar.scss';
 
 @Component({
     moduleId: module.id,

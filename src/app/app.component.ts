@@ -4,6 +4,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { AppState } from './app.service';
 import { Navbar, Footer } from './shared/index';
+import './app.scss';
 
 /*
  * App Component
@@ -13,11 +14,13 @@ import { Navbar, Footer } from './shared/index';
   selector: 'app',
   encapsulation: ViewEncapsulation.None,
   template: `
-    <site-navbar></site-navbar>
-    <route-view></route-view>
-    <site-footer></site-footer>
+    <md-content>
+      <site-navbar></site-navbar>
+      <route-view></route-view>
+      <site-footer></site-footer>
+    </md-content>
   `,
-  styles: [require('./app.scss')]
+  directives: [Navbar, Footer]
 })
 export class App {
   angularclassLogo = 'assets/img/angularclass-avatar.png';

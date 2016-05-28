@@ -7,6 +7,8 @@ import { FORM_PROVIDERS, PathLocationStrategy, LocationStrategy } from '@angular
 // Angular 2 Http
 import { HTTP_PROVIDERS } from '@angular/http';
 
+import { MATERIAL_PROVIDERS } from './angular2-material2';
+
 /*
 * Application Providers/Directives/Pipes
 * providers/directives/pipes that only live in our browser environment
@@ -14,6 +16,7 @@ import { HTTP_PROVIDERS } from '@angular/http';
 export const APPLICATION_PROVIDERS = [
   ...FORM_PROVIDERS,
   ...HTTP_PROVIDERS,
+  ...MATERIAL_PROVIDERS,
   {provide: LocationStrategy, useClass: PathLocationStrategy }
 ];
 

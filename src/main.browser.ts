@@ -2,6 +2,7 @@
  * Providers provided by Angular
  */
 import { bootstrap } from '@angular/platform-browser-dynamic';
+import { PathLocationStrategy } from '@angular/common';
 /*
 * Platform and Environment
 * our providers/directives/pipes
@@ -15,7 +16,7 @@ import { ENV_PROVIDERS } from './platform/environment';
 */
 import { App, APP_PROVIDERS, routes } from './app';
 import { provideRouter } from '@ngrx/router';
-import {MATERIAL_DIRECTIVES, MATERIAL_PROVIDERS} from 'ng2-material';
+// import {MATERIAL_DIRECTIVES, MATERIAL_PROVIDERS} from 'ng2-material';
 
 
 /*
@@ -28,11 +29,9 @@ export function main(initialHmrState?: any): Promise<any> {
     ...PROVIDERS,
     ...ENV_PROVIDERS,
     ...DIRECTIVES,
-    ...MATERIAL_DIRECTIVES,
-    ...MATERIAL_PROVIDERS,
     ...PIPES,
     ...APP_PROVIDERS,
-    provideRouter(routes)
+    provideRouter(routes, PathLocationStrategy)
   ])
   .catch(err => console.error(err));
 

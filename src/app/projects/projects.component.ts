@@ -6,23 +6,21 @@ import { Component } from '@angular/core';
  * see https://github.com/gdi2290/es6-promise-loader for more info
  */
 
-console.log('`About` component loaded asynchronously');
+console.log('`Projects` component loaded asynchronously');
 
 @Component({
-  selector: 'about',
-  styles: [`
-  `],
+  selector: 'projects',
   template: `
-    <h1>About</h1>
+    <h1>Projects</h1>
   `
 })
-export class About {
+export class Projects {
   constructor() {
 
   }
 
   ngOnInit() {
-    console.log('hello `About` component');
+    console.log('hello `Projects` component');
     // static data that is bundled
     // var mockData = require('assets/mock-data/mock-data.json');
     // console.log('mockData', mockData);
